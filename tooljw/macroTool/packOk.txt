@@ -1,0 +1,98 @@
+C:\Users\qgj>cd D:\workDirect\gitWork\tooljw\zip\macroTool
+
+C:\Users\qgj>d:
+
+D:\workDirect\gitWork\tooljw\zip\macroTool>dir
+ 驱动器 D 中的卷是 Data
+ 卷的序列号是 6435-3953
+
+ D:\workDirect\gitWork\tooljw\zip\macroTool 的目录
+
+2022/12/21  18:19    <DIR>          .
+2022/12/21  18:19    <DIR>          ..
+2022/12/21  18:19    <DIR>          batlist
+2022/12/21  18:19    <DIR>          conf
+2022/12/21  18:19    <DIR>          marcoSSH
+2022/12/21  18:19    <DIR>          template
+               0 个文件              0 字节
+               6 个目录 204,530,204,672 可用字节
+
+D:\workDirect\gitWork\tooljw\zip\macroTool>cd marcoSSH
+
+D:\workDirect\gitWork\tooljw\zip\macroTool\marcoSSH>PyInstaller -Fw ./marco/mainUI.py
+175 INFO: PyInstaller: 5.7.0
+175 INFO: Python: 3.8.0
+175 INFO: Platform: Windows-10-10.0.19041-SP0
+178 INFO: wrote D:\workDirect\gitWork\tooljw\zip\macroTool\marcoSSH\mainUI.spec
+180 INFO: UPX is not available.
+181 INFO: Extending PYTHONPATH with paths
+['D:\\workDirect\\gitWork\\tooljw\\zip\\macroTool\\marcoSSH\\marco']
+334 INFO: checking Analysis
+335 INFO: Building Analysis because Analysis-00.toc is non existent
+335 INFO: Initializing module dependency graph...
+336 INFO: Caching module graph hooks...
+348 INFO: Analyzing base_library.zip ...
+1265 INFO: Loading module hook 'hook-heapq.py' from 'd:\\software\\install\\python\\python38\\lib\\site-packages\\PyInstaller\\hooks'...
+1310 INFO: Loading module hook 'hook-encodings.py' from 'd:\\software\\install\\python\\python38\\lib\\site-packages\\PyInstaller\\hooks'...
+2136 INFO: Loading module hook 'hook-pickle.py' from 'd:\\software\\install\\python\\python38\\lib\\site-packages\\PyInstaller\\hooks'...
+2896 INFO: Caching module dependency graph...
+2994 INFO: running Analysis Analysis-00.toc
+2996 INFO: Adding Microsoft.Windows.Common-Controls to dependent assemblies of final executable
+  required by d:\software\install\python\python38\python.exe
+3129 INFO: Analyzing D:\workDirect\gitWork\tooljw\zip\macroTool\marcoSSH\marco\mainUI.py
+3236 INFO: Loading module hook 'hook-platform.py' from 'd:\\software\\install\\python\\python38\\lib\\site-packages\\PyInstaller\\hooks'...
+3259 INFO: Processing module hooks...
+3263 INFO: Loading module hook 'hook-_tkinter.py' from 'd:\\software\\install\\python\\python38\\lib\\site-packages\\PyInstaller\\hooks'...
+3364 INFO: checking Tree
+3364 INFO: Building Tree because Tree-00.toc is non existent
+3364 INFO: Building Tree Tree-00.toc
+3398 INFO: checking Tree
+3398 INFO: Building Tree because Tree-01.toc is non existent
+3398 INFO: Building Tree Tree-01.toc
+3459 INFO: checking Tree
+3459 INFO: Building Tree because Tree-02.toc is non existent
+3459 INFO: Building Tree Tree-02.toc
+3474 INFO: Looking for ctypes DLLs
+3477 INFO: Analyzing run-time hooks ...
+3479 INFO: Including run-time hook 'd:\\software\\install\\python\\python38\\lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py'
+3482 INFO: Looking for dynamic libraries
+163 INFO: Extra DLL search directories (AddDllDirectory): []
+164 INFO: Extra DLL search directories (PATH): ['D:\\software\\install\\JDK\\jdk-11.0.12\\bin', 'C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath', 'D:\\software\\install\\Python\\Python38', 'D:\\software\\install\\Python\\Python38\\Scripts', 'D:\\software\\install\\Python\\Python27\\Scripts', 'D:\\software\\data\\Android\\Sdk\\platform-tools', 'D:\\software\\data\\Android\\Sdk\\emulator', 'D:\\software\\data\\Android\\Sdk\\tools', 'D:\\software\\data\\Android\\Sdk\\tools\\bin', 'C:\\Windows\\system32', 'C:\\Windows', 'C:\\Windows\\System32\\Wbem', 'C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\', 'C:\\Windows\\System32\\OpenSSH\\', 'C:\\Program Files (x86)\\dotnet\\', 'D:\\Program Files\\Git\\cmd', 'D:\\software\\install\\Microsoft VS Code\\bin', 'D:\\Program Files\\nodejs\\', 'C:\\Program Files\\dotnet\\', 'D:\\software\\install\\anaconda3', 'D:\\software\\install\\anaconda3\\Library\\mingw-w64\\bin', 'D:\\software\\install\\anaconda3\\Library\\usr\\bin', 'D:\\software\\install\\anaconda3\\Library\\bin', 'D:\\software\\install\\anaconda3\\Scripts', 'C:\\Users\\qgj\\AppData\\Local\\Microsoft\\WindowsApps', 'C:\\Users\\qgj\\AppData\\Roaming\\npm']
+4001 INFO: Looking for eggs
+4001 INFO: Using Python library d:\software\install\python\python38\python38.dll
+4003 INFO: Found binding redirects:
+[]
+4013 INFO: Warnings written to D:\workDirect\gitWork\tooljw\zip\macroTool\marcoSSH\build\mainUI\warn-mainUI.txt
+4037 INFO: Graph cross-reference written to D:\workDirect\gitWork\tooljw\zip\macroTool\marcoSSH\build\mainUI\xref-mainUI.html
+4074 INFO: checking PYZ
+4074 INFO: Building PYZ because PYZ-00.toc is non existent
+4075 INFO: Building PYZ (ZlibArchive) D:\workDirect\gitWork\tooljw\zip\macroTool\marcoSSH\build\mainUI\PYZ-00.pyz
+4273 INFO: Building PYZ (ZlibArchive) D:\workDirect\gitWork\tooljw\zip\macroTool\marcoSSH\build\mainUI\PYZ-00.pyz completed successfully.
+4279 INFO: checking PKG
+4280 INFO: Building PKG because PKG-00.toc is non existent
+4281 INFO: Building PKG (CArchive) mainUI.pkg
+6259 INFO: Building PKG (CArchive) mainUI.pkg completed successfully.
+6276 INFO: Bootloader d:\software\install\python\python38\lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+6277 INFO: checking EXE
+6277 INFO: Building EXE because EXE-00.toc is non existent
+6277 INFO: Building EXE from EXE-00.toc
+6278 INFO: Copying bootloader EXE to D:\workDirect\gitWork\tooljw\zip\macroTool\marcoSSH\dist\mainUI.exe.notanexecutable
+6287 INFO: Copying icon to EXE
+6289 INFO: Copying icons from ['d:\\software\\install\\python\\python38\\lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-windowed.ico']
+6289 INFO: Writing RT_GROUP_ICON 0 resource with 104 bytes
+6292 INFO: Writing RT_ICON 1 resource with 3752 bytes
+6292 INFO: Writing RT_ICON 2 resource with 2216 bytes
+6293 INFO: Writing RT_ICON 3 resource with 1384 bytes
+6293 INFO: Writing RT_ICON 4 resource with 38188 bytes
+6293 INFO: Writing RT_ICON 5 resource with 9640 bytes
+6294 INFO: Writing RT_ICON 6 resource with 4264 bytes
+6294 INFO: Writing RT_ICON 7 resource with 1128 bytes
+6300 INFO: Copying 0 resources to EXE
+6300 INFO: Embedding manifest in EXE
+6301 INFO: Updating manifest in D:\workDirect\gitWork\tooljw\zip\macroTool\marcoSSH\dist\mainUI.exe.notanexecutable
+6302 INFO: Updating resource type 24 name 1 language 0
+6308 INFO: Appending PKG archive to EXE
+6312 INFO: Fixing EXE headers
+6406 INFO: Building EXE from EXE-00.toc completed successfully.
+
+D:\workDirect\gitWork\tooljw\zip\macroTool\marcoSSH>

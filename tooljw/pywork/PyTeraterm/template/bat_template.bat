@@ -1,0 +1,2 @@
+"@ttpmarcoPath" "@ttlFile"
+exit

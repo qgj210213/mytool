@@ -1,0 +1,45 @@
+sshurl = '@sshUrl'
+;读取跳板host
+fileopen fhandle '../hosturl.txt' 0
+filereadln fhandle  hosturl
+fileclose fhandle
+Host = hosturl
+;读取用户名
+fileopen fhandle '../hostname.txt' 0
+filereadln fhandle  hostname
+fileclose fhandle
+hostUser = hostname
+;读取密码
+fileopen fhandle '../password.txt' 0
+filereadln fhandle  pwd
+fileclose fhandle
+Password1 = pwd
+Ini = 'TERATERM.INI'
+Cmd = ''
+strconcat Cmd Host
+strconcat Cmd ' /ssh /2 /auth=password'
+strconcat Cmd ' /user='
+strconcat Cmd hostUser
+strconcat Cmd ' /passwd='
+strconcat Cmd Password1
+strconcat Cmd ' /f='
+strconcat Cmd Ini
+; ---------------------------------------------------------------------------------------------
+; connect 连接命令
+connect Cmd
+
+; 等待
+wait '$'
+; ---------------------------------------------------------------------------------------------
+; 远程链接
+Cmdssh = ''
+strconcat Cmdssh 'ssh '
+strconcat Cmdssh sshurl
+sendln Cmdssh
+; 等待 密码输入
+wait ':'
+; 输入密码
+sendln Password1
+; 等待 输入指定地址命令
+wait '$'
+; ---------------------------------------------------------------------------------------------

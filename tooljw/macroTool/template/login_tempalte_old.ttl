@@ -1,0 +1,20 @@
+Host = '@loginhost'
+User1 = '@loginuser'
+fileopen fhandle '../password.txt' 0
+filereadln fhandle  pwd
+fileclose fhandle
+Password1 = pwd
+Ini = 'TERATERM.INI'
+Cmd = ''
+strconcat Cmd Host
+strconcat Cmd ' /ssh /2 /auth=password'
+strconcat Cmd ' /user='
+strconcat Cmd User1
+strconcat Cmd ' /passwd='
+strconcat Cmd Password1
+strconcat Cmd ' /f='
+strconcat Cmd Ini
+; connect 连接命令
+connect Cmd
+; 等待
+wait '$'

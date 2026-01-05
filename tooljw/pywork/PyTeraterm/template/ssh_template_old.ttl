@@ -1,0 +1,27 @@
+Host = '@loginhost'
+User1 = '@loginuser'
+Password1 = '@pwd'
+Ini = 'TERATERM.INI'
+Cmd = ''
+strconcat Cmd Host
+strconcat Cmd ' /ssh /2 /auth=password'
+strconcat Cmd ' /user='
+strconcat Cmd User1
+strconcat Cmd ' /passwd='
+strconcat Cmd Password1
+strconcat Cmd ' /f='
+strconcat Cmd Ini
+; connect 连接命令
+connect Cmd
+; 等待
+wait '$'
+; ---------------------------------------------------------------------------------------------
+; 远程链接
+sendln 'ssh @loginuser@@sshUrl'
+; 等待 密码输入
+wait ':'
+; 输入密码
+sendln Password1
+; 等待 输入指定地址命令
+wait '$'
+; ---------------------------------------------------------------------------------------------
